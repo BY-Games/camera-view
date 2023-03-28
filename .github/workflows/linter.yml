@@ -50,3 +50,5 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
+      - name: Super-Linter
+        uses: github/super-linter@v4.10.1
