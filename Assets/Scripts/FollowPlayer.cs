@@ -9,7 +9,6 @@ public class FollowPlayer : MonoBehaviour
 
     public GameObject Target; // the obejct the camera follow 
     private Vector3 Offset; //distance between the camera and the target object
-    float limtX = 2432;
 
     // Start is called before the first frame update
     void Start()
@@ -24,11 +23,10 @@ public class FollowPlayer : MonoBehaviour
 
         //updates the camera's position every frame
         transform.position = Target.transform.position + Offset;
-        if (!(Target.transform.position.x > limtX))
-        {
+        
             //updates the camera's position every frame
             transform.position = Target.transform.position + Offset;
-        }
+        
 
     }
 
