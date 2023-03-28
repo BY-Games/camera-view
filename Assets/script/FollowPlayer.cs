@@ -24,11 +24,10 @@ public class FollowPlayer : MonoBehaviour
 
         //updates the camera's position every frame
         transform.position = Target.transform.position + Offset;
-        if (!(Target.transform.position.x > limtX))
-        {
+        
             //updates the camera's position every frame
             transform.position = Target.transform.position + Offset;
-        }
+        
 
     }
 
